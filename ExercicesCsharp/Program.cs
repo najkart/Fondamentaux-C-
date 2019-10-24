@@ -23,11 +23,17 @@ namespace ExercicesCsharp
             Console.WriteLine(test3(15, 15));
             Console.WriteLine(test3(3, 30));
             Console.WriteLine(test3(6, 7));
-
-
-
-
+            //exo 11 
+            Console.WriteLine(test11("Python"));
+            Console.WriteLine(test11("js"));
+            Console.WriteLine(test11("code"));
+            //exo 12
+            Console.WriteLine(test12("C# Sharp"));
+            Console.WriteLine(test12("C#"));
+            Console.WriteLine(test12("C++"));
             Console.ReadLine();
+          
+
         
         }
         //exo 1 
@@ -54,6 +60,28 @@ namespace ExercicesCsharp
         public static bool test3(int a ,int b)
         {
             return a == 30 || b == 30 || (a + b == 30);
+        }
+        //exo 11
+        public static string test11(string word)
+        {
+           
+            if (word.Length < 3)
+            {
+                return word + word + word;
+            }
+            else
+            {
+                string newWord = word.Substring(0, 3);
+
+                return newWord + word + newWord;
+            }
+           
+            
+        }
+        public static bool test12(string word)
+        {
+            //return (word.Substring(0, 2) == "c#") ? true : false;
+            return (word.Length < 3 && word.Equals("C#")) || (word.StartsWith("C#")&& word[2] == ' ');
         }
 
     }
