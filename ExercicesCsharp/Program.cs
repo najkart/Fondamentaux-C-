@@ -31,7 +31,11 @@ namespace ExercicesCsharp
             Console.WriteLine(test12("C# Sharp"));
             Console.WriteLine(test12("C#"));
             Console.WriteLine(test12("C++"));
+            //exo15
+
             Console.ReadLine();
+            
+
           
 
         
@@ -82,6 +86,13 @@ namespace ExercicesCsharp
         {
             //return (word.Substring(0, 2) == "c#") ? true : false;
             return (word.Length < 3 && word.Equals("C#")) || (word.StartsWith("C#")&& word[2] == ' ');
+        }
+
+        //exo 15
+        public static string test15(char car)
+        {
+
+            return "";
         }
 
     }
